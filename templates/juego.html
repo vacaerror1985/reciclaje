@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Juegos - Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Juegos</h1>
+  <p>Selecciona una de las actividades:</p>
+  <ul>
+    <li><a href="{{ url_for('preguntas') }}">Preguntas sobre reciclaje</a></li>
+    <!-- enlaces futuros: sopa, concentrese -->
+  </ul>
+  <p><a href="{{ url_for('menu_juego') }}">Menú</a> | <a href="{{ url_for('index') }}">Inicio</a></p>
+</body>
+</html>

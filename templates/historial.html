@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Historial</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Historial de resultados</h1>
+  <ul>
+    {% for r in resultados %}
+      <li>{{ r.created_at }} - {{ r.juego }} - Puntaje: {{ r.score }}</li>
+    {% else %}
+      <li>No hay resultados aún.</li>
+    {% endfor %}
+  </ul>
+  <p><a href="{{ url_for('menu_juego') }}">Volver</a></p>
+</body>
+</html>

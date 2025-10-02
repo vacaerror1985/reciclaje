@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Preguntas - Reciclaje</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <h1>Preguntas sobre reciclaje</h1>
+  <form method="post" action="{{ url_for('preguntas') }}">
+    {% for p in preguntas %}
+      <fieldset>
+        <legend>{{ p.pregunta }}</legend>
+        {% for opt in p.opciones %}
+          <label><input type="radio" name="q{{ p.id }}" value="{{ opt }}"> {{ opt }}</label><br>
+        {% endfor %}
+      </fieldset>
+      <br>
+    {% endfor %}
+    <button type="submit">Enviar respuestas</button>
+  </form>
+  <p><a href="{{ url_for('menu_juego') }}">Volver a juegos</a></p>
+</body>
+</html>
