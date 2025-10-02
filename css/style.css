@@ -1,0 +1,36 @@
+/* Asegura que el body y html usen todo el alto de la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Imagen de fondo a pantalla completa */
+body {
+    background-image: url('../imagenes/juego.png'); /* Ajusta el path según tu estructura de carpetas */
+    background-size: cover;         /* Escala la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat;   /* No repite la imagen */
+    background-position: center;    /* Centra la imagen */
+}
+
+/* Opcional: para que el texto se vea mejor encima de la imagen */
+.container {
+    padding-top: 100px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+}
+
+#txt_sesion {
+ font-size: 20px;
+
+}
+
+#titulo {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem; /* Puedes ajustarlo */
+  font-size: 20px;
+  color: #009200;
+
+}
+
+

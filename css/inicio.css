@@ -1,0 +1,80 @@
+/* General */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+  color: #000;
+  text-align: center;
+}
+
+/* Fondo estilo videojuego */
+body {
+  background-image: url('../imagenes/juego.png'); /* Ajusta la ruta */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Formulario centrado */
+.formulario {
+  width: 80%;
+  max-width: 500px;
+  padding: 20px;
+  background: transparent;
+}
+
+/* Inputs estilo retro */
+.input-retro {
+  border: 3px solid #000;
+  border-radius: 6px;
+  font-size: 12px;
+  box-shadow: 3px 3px 0px #000;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Botón retro */
+.btn-retro {
+  display: inline-block;
+  background-color: #009200;
+  color: white;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 0px #000;
+  font-size: 12px;
+  text-shadow: 1px 1px #000;
+  padding: 12px 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-retro:hover {
+  background-color: #009200;
+  color: black;
+}
+
+.btn-retro:active {
+  transform: translate(3px, 3px);
+  box-shadow: none;
+}
+
+/* Links retro */
+.link-retro {
+  color: #000;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.link-retro:hover {
+  color: #009200;
+  text-decoration: underline;
+}
+
+.titulo-pixel {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem; /* Puedes ajustar el tamaño */
+  color: #009200;
+  margin-top: 2rem;
+}
+
